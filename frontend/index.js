@@ -66,7 +66,7 @@ async function moduleProject4() {
     }
   })
 
-  function getDayOfWeek(dateString) { // Courtesy of ChatGPT
+  function getDayOfWeek(dateString) { // Courtesy of ChatGPT. Remember ChatGPT can make mistakes!
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const date = new Date(dateString + 'T00:00:00Z');
     const dayOfWeekIndex = date.getUTCDay();
