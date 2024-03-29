@@ -68,9 +68,10 @@ async function moduleProject4() {
 
   function getDayOfWeek(dateString) { // Courtesy of ChatGPT. Remember ChatGPT can make mistakes!
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const date = new Date(dateString + 'T00:00:00Z');
-    const dayOfWeekIndex = date.getUTCDay();
-    return daysOfWeek[dayOfWeekIndex];
+    const date = new Date(dateString);
+    const dayOfWeekIndex = date.getDay();
+    const dayOfWeek = daysOfWeek[dayOfWeekIndex];
+    return dayOfWeek;
   }
   // 👆 WORK WORK ABOVE THIS LINE 👆
 }
